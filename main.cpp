@@ -188,13 +188,13 @@ public:
 
 class time_fut{
   string nome;
-  unique_ptr<tecnico> tecnico ;
+  unique_ptr<tecnico> tecnico1 ;
   vector<std::unique_ptr<jogador>> jogadores;
   int pontos;
 
 public:
    time_fut(const string& nome, unique_ptr<tecnico> t)
-       : nome(nome), tecnico(std::move(t)), pontos(0) {//erro aqui , voltar aqui !!
+       : nome(nome), tecnico1(std::move(t)), pontos(0) {//erro aqui , voltar aqui !!
    }
 
   void adicionar_jogador(unique_ptr<jogador> jogador) {
